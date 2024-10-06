@@ -1,0 +1,16 @@
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-zp6jny sitelibdir\=./.gem.20241005-446268-zp6jny clean
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-zp6jny sitelibdir\=./.gem.20241005-446268-zp6jny
+make: Rien à faire pour « all ».
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-zp6jny sitelibdir\=./.gem.20241005-446268-zp6jny install
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-zp6jny sitelibdir\=./.gem.20241005-446268-zp6jny clean

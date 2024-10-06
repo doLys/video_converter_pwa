@@ -1,0 +1,256 @@
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.3/ext/nio4r
+/home/sum/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+checking for unistd.h... yes
+checking for rb_io_descriptor()... yes
+checking for linux/aio_abi.h... yes
+checking for linux/io_uring.h... yes
+checking for sys/select.h... yes
+checking for port_event_t in poll.h... no
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for port_event_t in port.h... no
+checking for sys/resource.h... yes
+creating Makefile
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.3/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-wfr1xe sitelibdir\=./.gem.20241005-448146-wfr1xe clean
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.3/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-wfr1xe sitelibdir\=./.gem.20241005-448146-wfr1xe
+compiling bytebuffer.c
+bytebuffer.c: Dans la fonction « Init_NIO_ByteBuffer »:
+bytebuffer.c:59:6: attention: définition de fonction selon l'ancien style [-Wold-style-definition]
+   59 | void Init_NIO_ByteBuffer()
+      |      ^~~~~~~~~~~~~~~~~~~
+Au plus haut niveau:
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-self-assign » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-parentheses-equality » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-constant-logical-operand » aurait pu avoir pour but de supprimer les diagnostiques précédents
+compiling monitor.c
+monitor.c: Dans la fonction « Init_NIO_Monitor »:
+monitor.c:50:6: attention: définition de fonction selon l'ancien style [-Wold-style-definition]
+   50 | void Init_NIO_Monitor()
+      |      ^~~~~~~~~~~~~~~~
+Au plus haut niveau:
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-self-assign » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-parentheses-equality » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-constant-logical-operand » aurait pu avoir pour but de supprimer les diagnostiques précédents
+compiling nio4r_ext.c
+Dans le fichier inclus depuis nio4r_ext.c:6:
+../libev/ev.c:234:5: attention: « EV_NO_THREADS » n’est pas défini, évalué à 0 [-Wundef]
+  234 | #if EV_NO_THREADS
+      |     ^~~~~~~~~~~~~
+../libev/ev.c:240:5: attention: « EV_NO_SMP » n’est pas défini, évalué à 0 [-Wundef]
+  240 | #if EV_NO_SMP
+      |     ^~~~~~~~~
+../libev/ev.c:573:48: attention: « /* » à l'intérieur d’un commentaire [-Wcomment]
+  573 | /*#define MIN_INTERVAL  0.00000095367431640625 /* 1/2**20, good till 2200 */
+../libev/ev.c:691:7: attention: « __OPTIMIZE_SIZE__ » n’est pas défini, évalué à 0 [-Wundef]
+  691 |   #if __OPTIMIZE_SIZE__
+      |       ^~~~~~~~~~~~~~~~~
+../libev/ev.c:700:7: attention: « _ILP32 » n’est pas défini, évalué à 0 [-Wundef]
+  700 |   #if _ILP32
+      |       ^~~~~~
+../libev/ev.c:722:5: attention: « __clang__ » n’est pas défini, évalué à 0 [-Wundef]
+  722 | #if __clang__ && defined __has_builtin
+      |     ^~~~~~~~~
+../libev/ev.c:728:5: attention: « __clang__ » n’est pas défini, évalué à 0 [-Wundef]
+  728 | #if __clang__ && defined __has_extension
+      |     ^~~~~~~~~
+../libev/ev.c:734:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  734 | #define ECB_CPP   (__cplusplus+0)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:739:5: note: dans l'expansion de la macro « ECB_CPP »
+  739 | #if ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:734:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  734 | #define ECB_CPP   (__cplusplus+0)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:751:5: note: dans l'expansion de la macro « ECB_CPP »
+  751 | #if ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:766:5: attention: « ECB_NO_THREADS » n’est pas défini, évalué à 0 [-Wundef]
+  766 | #if ECB_NO_THREADS
+      |     ^~~~~~~~~~~~~~
+../libev/ev.c:770:5: attention: « ECB_NO_SMP » n’est pas défini, évalué à 0 [-Wundef]
+  770 | #if ECB_NO_SMP
+      |     ^~~~~~~~~~
+../libev/ev.c:775:5: attention: « __xlC__ » n’est pas défini, évalué à 0 [-Wundef]
+  775 | #if __xlC__ && ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:779:13: attention: « _MSC_VER » n’est pas défini, évalué à 0 [-Wundef]
+  779 | #if 1400 <= _MSC_VER
+      |             ^~~~~~~~
+../libev/ev.c:786:9: attention: « __i386 » n’est pas défini, évalué à 0 [-Wundef]
+  786 |     #if __i386 || __i386__
+      |         ^~~~~~
+../libev/ev.c:786:19: attention: « __i386__ » n’est pas défini, évalué à 0 [-Wundef]
+  786 |     #if __i386 || __i386__
+      |                   ^~~~~~~~
+../libev/ev.c:734:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  734 | #define ECB_CPP   (__cplusplus+0)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:924:5: note: dans l'expansion de la macro « ECB_CPP »
+  924 | #if ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:735:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  735 | #define ECB_CPP11 (__cplusplus >= 201103L)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:981:5: note: dans l'expansion de la macro « ECB_CPP11 »
+  981 | #if ECB_CPP11
+      |     ^~~~~~~~~
+../libev/ev.c:989:5: attention: « _MSC_VER » n’est pas défini, évalué à 0 [-Wundef]
+  989 | #if _MSC_VER >= 1300
+      |     ^~~~~~~~
+../libev/ev.c:995:5: attention: « _MSC_VER » n’est pas défini, évalué à 0 [-Wundef]
+  995 | #if _MSC_VER >= 1500
+      |     ^~~~~~~~
+../libev/ev.c:1003:5: attention: « _MSC_VER » n’est pas défini, évalué à 0 [-Wundef]
+ 1003 | #if _MSC_VER >= 1400
+      |     ^~~~~~~~
+../libev/ev.c:734:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  734 | #define ECB_CPP   (__cplusplus+0)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:1213:5: note: dans l'expansion de la macro « ECB_CPP »
+ 1213 | #if ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:734:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  734 | #define ECB_CPP   (__cplusplus+0)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:1374:5: note: dans l'expansion de la macro « ECB_CPP »
+ 1374 | #if ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:734:20: attention: « __cplusplus » n’est pas défini, évalué à 0 [-Wundef]
+  734 | #define ECB_CPP   (__cplusplus+0)
+      |                    ^~~~~~~~~~~
+../libev/ev.c:1409:5: note: dans l'expansion de la macro « ECB_CPP »
+ 1409 | #if ECB_CPP
+      |     ^~~~~~~
+../libev/ev.c:1425:5: attention: « ecb_cplusplus_does_not_suck » n’est pas défini, évalué à 0 [-Wundef]
+ 1425 | #if ecb_cplusplus_does_not_suck
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libev/ev.c: Dans la fonction « ecb_binary32_to_binary16 »:
+../libev/ev.c:1510:13: attention: comparaison d'expressions entières de types signés différents: « unsigned int » et « int » [-Wsign-compare]
+ 1510 |       if (e < (14 - 24)) /* might not be sharp, but is good enough */
+      |             ^
+../libev/ev.c: Au plus haut niveau:
+../libev/ev.c:1540:8: attention: « __i386 » n’est pas défini, évalué à 0 [-Wundef]
+ 1540 |     || __i386 || __i386__ \
+      |        ^~~~~~
+../libev/ev.c:1540:18: attention: « __i386__ » n’est pas défini, évalué à 0 [-Wundef]
+ 1540 |     || __i386 || __i386__ \
+      |                  ^~~~~~~~
+../libev/ev.c:1746:5: attention: « ECB_MEMORY_FENCE_NEEDS_PTHREADS » n’est pas défini, évalué à 0 [-Wundef]
+ 1746 | #if ECB_MEMORY_FENCE_NEEDS_PTHREADS
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../libev/ev.c:1976:5: attention: « EV_AVOID_STDIO » n’est pas défini, évalué à 0 [-Wundef]
+ 1976 | #if EV_AVOID_STDIO
+      |     ^~~~~~~~~~~~~~
+../libev/ev.c: Dans la fonction « ev_syserr »:
+../libev/ev.c:2005:5: attention: « EV_AVOID_STDIO » n’est pas défini, évalué à 0 [-Wundef]
+ 2005 | #if EV_AVOID_STDIO
+      |     ^~~~~~~~~~~~~~
+../libev/ev.c: Dans la fonction « ev_realloc »:
+../libev/ev.c:2050:5: attention: « EV_AVOID_STDIO » n’est pas défini, évalué à 0 [-Wundef]
+ 2050 | #if EV_AVOID_STDIO
+      |     ^~~~~~~~~~~~~~
+../libev/ev.c: Au plus haut niveau:
+../libev/ev.c:2080:5: attention: « EV_SELECT_IS_WINSOCKET » n’est pas défini, évalué à 0 [-Wundef]
+ 2080 | #if EV_SELECT_IS_WINSOCKET || EV_USE_IOCP
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+../libev/ev.c:2080:31: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+ 2080 | #if EV_SELECT_IS_WINSOCKET || EV_USE_IOCP
+      |                               ^~~~~~~~~~~
+../libev/ev.c:2083:5: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+ 2083 | #if EV_USE_IOCP
+      |     ^~~~~~~~~~~
+Dans le fichier inclus depuis ../libev/ev.c:2130:
+../libev/ev_vars.h:88:24: attention: « EV_GENWRAP » n’est pas défini, évalué à 0 [-Wundef]
+   88 | #if defined(_WIN32) || EV_GENWRAP
+      |                        ^~~~~~~~~~
+../libev/ev_vars.h:150:22: attention: « EV_GENWRAP » n’est pas défini, évalué à 0 [-Wundef]
+  150 | #if EV_USE_KQUEUE || EV_GENWRAP
+      |                      ^~~~~~~~~~
+../libev/ev_vars.h:159:20: attention: « EV_GENWRAP » n’est pas défini, évalué à 0 [-Wundef]
+  159 | #if EV_USE_PORT || EV_GENWRAP
+      |                    ^~~~~~~~~~
+../libev/ev_vars.h:164:5: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+  164 | #if EV_USE_IOCP || EV_GENWRAP
+      |     ^~~~~~~~~~~
+../libev/ev_vars.h:164:20: attention: « EV_GENWRAP » n’est pas défini, évalué à 0 [-Wundef]
+  164 | #if EV_USE_IOCP || EV_GENWRAP
+      |                    ^~~~~~~~~~
+../libev/ev.c:2136:31: attention: « ev_default_loop_ptr » initialisé et déclaré « extern »
+ 2136 |   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+      |                               ^~~~~~~~~~~~~~~~~~~
+../libev/ev.c: Dans la fonction « array_nextsize »:
+../libev/ev.c:2249:19: attention: comparaison d'expressions entières de types signés différents: « int » et « long unsigned int » [-Wsign-compare]
+ 2249 |   if (elem * ncur > MALLOC_ROUND - sizeof (void *) * 4)
+      |                   ^
+../libev/ev.c: Dans la fonction « fd_reify »:
+../libev/ev.c:2402:5: attention: « EV_SELECT_IS_WINSOCKET » n’est pas défini, évalué à 0 [-Wundef]
+ 2402 | #if EV_SELECT_IS_WINSOCKET || EV_USE_IOCP
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+../libev/ev.c:2402:31: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+ 2402 | #if EV_SELECT_IS_WINSOCKET || EV_USE_IOCP
+      |                               ^~~~~~~~~~~
+../libev/ev.c: Au plus haut niveau:
+../libev/ev.c:3073:5: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+ 3073 | #if EV_USE_IOCP
+      |     ^~~~~~~~~~~
+Dans le fichier inclus depuis ../libev/ev.c:3086:
+../libev/ev_linuxaio.c: Dans la fonction « linuxaio_poll »:
+../libev/ev_linuxaio.c:467:10: attention: des accolades explicites sont suggérées pour éviter toute ambiguïté sur le « else » [-Wdangling-else]
+  467 |       if (ecb_expect_false (res < 0))
+      |          ^
+Dans le fichier inclus depuis ../libev/ev.c:3089:
+../libev/ev_iouring.c: Dans la fonction « iouring_sqe_submit »:
+../libev/ev_iouring.c:298:31: attention: « /* » à l'intérieur d’un commentaire [-Wcomment]
+  298 |   /*ECB_MEMORY_FENCE_RELEASE; /* for the time being we assume this is not needed */
+../libev/ev_iouring.c: Dans la fonction « iouring_internal_init »:
+../libev/ev_iouring.c:359:5: attention: « TODO » n’est pas défini, évalué à 0 [-Wundef]
+  359 | #if TODO
+      |     ^~~~
+Dans le fichier inclus depuis ../libev/ev.c:3095:
+../libev/ev_select.c: Au plus haut niveau:
+../libev/ev_select.c:57:5: attention: « EV_SELECT_IS_WINSOCKET » n’est pas défini, évalué à 0 [-Wundef]
+   57 | #if EV_SELECT_IS_WINSOCKET
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+../libev/ev_select.c: Dans la fonction « select_poll »:
+../libev/ev_select.c:176:11: attention: « EV_SELECT_IS_WINSOCKET » n’est pas défini, évalué à 0 [-Wundef]
+  176 |       #if EV_SELECT_IS_WINSOCKET
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+../libev/ev.c: Dans la fonction « loop_init »:
+../libev/ev.c:3318:5: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+ 3318 | #if EV_USE_IOCP
+      |     ^~~~~~~~~~~
+../libev/ev.c: Dans la fonction « ev_loop_destroy »:
+../libev/ev.c:3409:5: attention: « EV_USE_IOCP » n’est pas défini, évalué à 0 [-Wundef]
+ 3409 | #if EV_USE_IOCP
+      |     ^~~~~~~~~~~
+../libev/ev.c: Dans la fonction « ev_io_start »:
+../libev/ev.c:4417:34: attention: parenthèses suggérées autour de l'arithmétique dans l'opérande de « | » [-Wparentheses]
+ 4417 |   fd_change (EV_A_ fd, w->events & EV__IOFDSET | EV_ANFD_REIFY);
+      |                        ~~~~~~~~~~^~~~~~~~~~~~~
+../libev/ev.c: Au plus haut niveau:
+../libev/ev.c:5682:27: attention: « /* » à l'intérieur d’un commentaire [-Wcomment]
+ 5682 | /* EV_STAT     0x00001000 /* stat data changed */
+../libev/ev.c:5683:27: attention: « /* » à l'intérieur d’un commentaire [-Wcomment]
+ 5683 | /* EV_EMBED    0x00010000 /* embedded event loop needs sweep */
+nio4r_ext.c: Dans la fonction « Init_nio4r_ext »:
+nio4r_ext.c:13:6: attention: définition de fonction selon l'ancien style [-Wold-style-definition]
+   13 | void Init_nio4r_ext()
+      |      ^~~~~~~~~~~~~~
+Au plus haut niveau:
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-self-assign » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-parentheses-equality » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-constant-logical-operand » aurait pu avoir pour but de supprimer les diagnostiques précédents
+compiling selector.c
+linking shared-object nio4r_ext.so
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.3/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-wfr1xe sitelibdir\=./.gem.20241005-448146-wfr1xe install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20241005-448146-wfr1xe
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.3/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-wfr1xe sitelibdir\=./.gem.20241005-448146-wfr1xe clean

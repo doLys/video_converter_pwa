@@ -1,0 +1,19 @@
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+/home/sum/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-dai2lu sitelibdir\=./.gem.20241005-448146-dai2lu clean
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-dai2lu sitelibdir\=./.gem.20241005-448146-dai2lu
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-dai2lu sitelibdir\=./.gem.20241005-448146-dai2lu install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241005-448146-dai2lu/debug
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-448146-dai2lu sitelibdir\=./.gem.20241005-448146-dai2lu clean

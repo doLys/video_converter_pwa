@@ -1,0 +1,18 @@
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-ttr8pa sitelibdir\=./.gem.20241005-446268-ttr8pa clean
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-ttr8pa sitelibdir\=./.gem.20241005-446268-ttr8pa
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-ttr8pa sitelibdir\=./.gem.20241005-446268-ttr8pa install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20241005-446268-ttr8pa/skiptrace/internal
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-ttr8pa sitelibdir\=./.gem.20241005-446268-ttr8pa clean

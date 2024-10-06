@@ -1,0 +1,193 @@
+have_header: checking for unistd.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -o conftest -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/home/sum/.rbenv/versions/3.3.0/lib -Wl,-rpath,/home/sum/.rbenv/versions/3.3.0/lib -L. -fstack-protector-strong -L/home/linuxbrew/.linuxbrew/opt/gmp/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/gmp/lib -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/home/sum/.rbenv/versions/3.3.0/lib -L/home/sum/.rbenv/versions/3.3.0/lib -lruby  -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <unistd.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_io_descriptor()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -o conftest -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/home/sum/.rbenv/versions/3.3.0/lib -Wl,-rpath,/home/sum/.rbenv/versions/3.3.0/lib -L. -fstack-protector-strong -L/home/linuxbrew/.linuxbrew/opt/gmp/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/gmp/lib -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/home/sum/.rbenv/versions/3.3.0/lib -L/home/sum/.rbenv/versions/3.3.0/lib -lruby  -lm -lpthread  -lc"
+conftest.c: Dans la fonction « t »:
+conftest.c:14:57: erreur: « rb_io_descriptor » non déclaré (première utilisation dans cette fonction)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_descriptor; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~
+conftest.c:14:57: note: chaque identificateur non déclaré est rapporté une seule fois pour chaque fonction dans laquelle il apparaît
+Au plus haut niveau:
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-self-assign » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-parentheses-equality » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-constant-logical-operand » aurait pu avoir pour but de supprimer les diagnostiques précédents
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_descriptor; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -o conftest -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/home/sum/.rbenv/versions/3.3.0/lib -Wl,-rpath,/home/sum/.rbenv/versions/3.3.0/lib -L. -fstack-protector-strong -L/home/linuxbrew/.linuxbrew/opt/gmp/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/gmp/lib -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/home/sum/.rbenv/versions/3.3.0/lib -L/home/sum/.rbenv/versions/3.3.0/lib -lruby  -lm -lpthread  -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_io_descriptor();
+15: int t(void) { rb_io_descriptor(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for linux/aio_abi.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <linux/aio_abi.h>
+/* end */
+
+--------------------
+
+have_header: checking for linux/io_uring.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <linux/io_uring.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/select.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/select.h>
+/* end */
+
+--------------------
+
+have_type: checking for port_event_t in poll.h... -------------------- no
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+conftest.c:6:9: erreur: nom de type « port_event_t » inconnu
+    6 | typedef port_event_t conftest_type;
+      |         ^~~~~~~~~~~~
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-self-assign » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-parentheses-equality » aurait pu avoir pour but de supprimer les diagnostiques précédents
+cc1: note: l'option de la ligne de commande non reconnue « -Wno-constant-logical-operand » aurait pu avoir pour but de supprimer les diagnostiques précédents
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <poll.h>
+4: 
+5: /*top*/
+6: typedef port_event_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for sys/epoll.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/epoll.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/event.h... -------------------- no
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+conftest.c:3:10: erreur fatale: sys/event.h : Aucun fichier ou dossier de ce nom
+    3 | #include <sys/event.h>
+      |          ^~~~~~~~~~~~~
+compilation terminée.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/event.h>
+/* end */
+
+--------------------
+
+have_type: checking for port_event_t in port.h... -------------------- no
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+conftest.c:3:10: erreur fatale: port.h : Aucun fichier ou dossier de ce nom
+    3 | #include <port.h>
+      |          ^~~~~~~~
+compilation terminée.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <port.h>
+4: 
+5: /*top*/
+6: typedef port_event_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for sys/resource.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/home/sum/.rbenv/versions/3.3.0/lib "gcc -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/x86_64-linux -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/backward -I/home/sum/.rbenv/versions/3.3.0/include/ruby-3.3.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/resource.h>
+/* end */
+
+--------------------
+

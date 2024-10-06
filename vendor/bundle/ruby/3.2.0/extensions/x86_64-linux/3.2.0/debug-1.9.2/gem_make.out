@@ -1,0 +1,19 @@
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-8cowxv sitelibdir\=./.gem.20241005-446268-8cowxv clean
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-8cowxv sitelibdir\=./.gem.20241005-446268-8cowxv
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-8cowxv sitelibdir\=./.gem.20241005-446268-8cowxv install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241005-446268-8cowxv/debug
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-8cowxv sitelibdir\=./.gem.20241005-446268-8cowxv clean

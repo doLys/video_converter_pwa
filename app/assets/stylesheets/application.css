@@ -1,0 +1,11 @@
+.container {
+  max-width: 600px;
+}
+
+#progressContainer {
+  height: 30px;
+}
+
+#result {
+  font-weight: bold;
+}

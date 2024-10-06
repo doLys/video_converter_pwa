@@ -1,0 +1,18 @@
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-jjviaz sitelibdir\=./.gem.20241005-446268-jjviaz clean
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-jjviaz sitelibdir\=./.gem.20241005-446268-jjviaz
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-jjviaz sitelibdir\=./.gem.20241005-446268-jjviaz install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20241005-446268-jjviaz
+
+current directory: /home/sum/code/video_converter_pwa/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241005-446268-jjviaz sitelibdir\=./.gem.20241005-446268-jjviaz clean
